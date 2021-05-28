@@ -1,0 +1,16 @@
+const _env = require("dotenv").config();
+
+const { resolve } = require("path");
+
+module.exports = {
+  config: resolve(__dirname, "src", "config", "database.js"),
+  "models-path": resolve(__dirname, "src", "shared", "Models"),
+  "migrations-path": resolve(
+    __dirname,
+    "src",
+    "shared",
+    "database",
+    "migrations"
+  ),
+  "seeders-path": resolve(__dirname, "src", "database", "seeds"),
+};

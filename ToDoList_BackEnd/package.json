@@ -1,0 +1,46 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app/infra/server.js",
+    "build": "babel src --out-dir dist",
+    "start:serve": "node dist/app/Infra/server.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.5",
+    "aws-sdk": "^2.809.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-throw-expressions": "^7.10.4",
+    "@babel/plugin-transform-arrow-functions": "^7.10.4",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/runtime": "^7.10.5",
+    "@types/node": "^15.0.0",
+    "babel-node": "^0.0.1-security",
+    "nodemon": "^2.0.6",
+    "sequelize-cli": "^6.2.0",
+    "sucrase": "^3.16.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
